@@ -1,0 +1,238 @@
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #777;
+}
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+}
+
+nav
+{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition:.5s;
+  z-index: 100;
+}
+
+
+nav.black
+{
+  background: rgba(0,0,0,.8);
+  height: 50px;
+  padding: 10px 50px;
+}
+
+nav .logo
+{
+  float:left;
+}
+
+
+
+nav ul 
+{
+  float: right;
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+nav ul li
+{
+  list-style: none;
+}
+
+
+nav ul li a
+{
+  line-height: : 80px;
+  color: #262626;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+nav.black ul li a 
+{
+  color: #fff;
+}
+
+
+nav ul li a.active,
+nav ul li a:hover
+{
+  color: #fff;
+  background: #f00;
+}
+
+
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("oceanwave.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("underwater.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("underwater.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("oceanfloor.png");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+
+
+p.parent flexbox-container {
+  font-size: 50px;
+}
+.standard {
+  height: 100px;
+  width: 100px;
+  background: black;
+  display: table;
+
+}
+.divcenter {
+  
+  padding-bottom: auto;
+  padding-top: auto;
+}
+.sec1 {
+  background: transparent;
+}
+.sec2 {
+  background: transparent;
+}
+.sec3 {
+  background: transparent;
+}
+.sec4 {
+  background: transparent;
+}
+.parent p {
+      
+    vertical-align: middle;
+      text-align: center; 
+  }
+  .parent div {
+    width: 50%;
+      min-width: 300px;
+  }
+  .flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-container > div {
+  }
+
+
+#shiva
+{
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color:white;
+  text-align: center;
+  font-size:25px;
+}
+#talkbubble {
+   width: 120px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+   margin:auto;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+
+.linker
+{
+  font-size : 20px;
+  font-color: black;
+}
+
