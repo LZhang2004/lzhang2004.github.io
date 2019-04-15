@@ -24,6 +24,58 @@
 <link rel='stylesheet' id='dlm-frontend-css'  href='https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/plugins/download-monitor/assets/css/frontend.css' type='text/css' media='all' />
 <link rel='stylesheet' id='googleFonts-css'  href='https://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic' type='text/css' media='all' />
 <link rel='stylesheet' id='bootstrap-stylesheet-css'  href='https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/themes/new%20edn/library/css/bootstrap.min.css' type='text/css' media='all' />
+<link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+
+<script type="text/javascript">
+      AmCharts.makeChart("chartdiv",
+        {
+          "type": "pie",
+          "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+          "titleField": "country",
+          "valueField": "litres",
+          "fontSize": 12,
+          "theme": "chalk",
+          "allLabels": [],
+          "balloon": {},
+          "titles": [],
+          "dataProvider": [
+            {
+              "country": "Czech Republic",
+              "litres": "356.9"
+            },
+            {
+              "country": "Ireland",
+              "litres": 131.1
+            },
+            {
+              "country": "Germany",
+              "litres": 115.8
+            },
+            {
+              "country": "Australia",
+              "litres": 109.9
+            },
+            {
+              "country": "Austria",
+              "litres": 108.3
+            },
+            {
+              "country": "UK",
+              "litres": 65
+            },
+            {
+              "country": "Belgium",
+              "litres": "20"
+            }
+          ]
+        }
+      );
+    </script>
+
+
 
 
 </head>
@@ -38,11 +90,11 @@
   </div>
   <ul>
     <li><a href="#" class = "active">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">God</a></li>
-    <li><a href="#">Team</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="navbar/about.html">About</a></li>
+    <li><a href="navbar/services.html">Services</a></li>
+    <li><a href="navbar/donate.html">Donate</a></li>
+    <li><a href="navbar/team.html">Team</a></li>
+    <li><a href="navbar/contact.html">Contact</a></li>
   </ul>
 </nav>
 
@@ -57,7 +109,8 @@
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Goal 14: Life Under Water</h3>
-  <p>aighttt lets get this bread</p>
+  <p>To understand the magnitude of input of plastics to the natural environment and world's oceans, we must understand various elements of the plastic production, distribution and waste management chain. This is crucial, not only in understanding the scale of the problem but in implementing the most effective interventions for reduction. Here is a chart with the distribution of plastic pollution by country. </p>
+  <div id="chartdiv" style="width: 100%; height: 400px; background-color: #282828;" ></div>
 </div>
 
 <div class="bgimg-2">
@@ -68,13 +121,14 @@
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Textbox under first pic (div)</p>
-<div id="shiva"><span class="count">200</span></div>
-<div id="shiva"><span class="count">1000</span></div>
-<div id="shiva"><span class="count">853</span></div>
-<div id="shiva"><span class="count">154</span></div>
-<div id="shiva"><span class="count">10</span></div>
-<div id="shiva"><span class="count">87</span></div>
+  <p>Data (refresh page) --> in order of graph, clockwise, starting from Czech Republic</p>
+<div id="shiva"><span class="count">39.35</span></div>
+<div id="shiva"><span class="count">14</span></div>
+<div id="shiva"><span class="count">13</span></div>
+<div id="shiva"><span class="count">12</span></div>
+<div id="shiva"><span class="count">12</span></div>
+<div id="shiva"><span class="count">7</span></div>
+<div id="shiva"><span class="count">2</span></div>
 <br />
 <br />
   </div>
@@ -83,11 +137,10 @@
     <h2 class="Intro">CALCULATE YOUR PLASTIC CONSUMPTION AND MAKE A PLAN TO REDUCE IT</h2>
     <p>Plastic pollution is one of the most important environmental problems that we face today. It impacts the environment and our health and wellbeing. We have all contributed to this problem – mostly unknowingly – and we must work to reduce and ultimately to End Plastic Pollution.</p>
     <p>Use this calculator to learn about how many plastic items you consume and discard every year!</p>
-    <p>The columns below mean: (please keep this in mind)</p>
     <ul>
-      <li>D: Daily Consumption</li>
-      <li>M: Monthly Consumption</li>
-      <li>Y: Yearly Consumption</li>
+      <li>D: Daily Consumption(# of items)</li>
+      <li>M: Monthly Consumption(# of items)</li>
+      <li>Y: Yearly Consumption(# of items)</li>
       <li>YPR: Yearly Personal Reduction **When calculating your Yearly Personal Reduction (YPR), enter in the third column the number of plastic items that you could reduce against your current yearly total (Y).</li>
     </ul>
 
@@ -224,12 +277,7 @@
             <p><span class="numbers" id="sumRow17">0</span></p>
             <input class="reduce" type="text"></input>
           </div>
-          <div>
-            <label>Plastic-packaged groceries(egg carton)</label>
-            <input class="monthly" type="text"></input>
-            <p><span class="numbers" id="sumRow18">0</span></p>
-            <input class="reduce" type="text"></input>
-          </div>
+          <br>
           <br>
           <br>
         <div>
@@ -266,26 +314,7 @@
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <div class = "parent flexbox-container">
-
-
-    <div class = "sec1 standard divcenter">
-      <p>Question 1</p>
-    </div>  
-
-    <div class = "sec2 standard divcenter">
-      <p>Question 2</p>
-    </div>  
-
-    <div class = "sec3 standard divcenter">
-      <p>Question 3</p>
-    </div>  
-
-    <div class = "sec4 standard divcenter"> 
-      <p>Question 4</p>
-    </div>  
-
-  </div>
+    <a href="quiz/1.html" style="color: #FFFFFF;, font-size: 30px;">Click For Quiz</a>
   </div>
 </div>
 
@@ -579,25 +608,24 @@ function calculateSum() {
 
 
 
-  sumRow1 = sumRow1 * 365 * 18
-  sumRow2 = sumRow2 * 365 * 40
-  sumRow3 = sumRow3 * 365 * 0.4
-  sumRow4 = sumRow4 * 365 * 0.5
-  sumRow5 = sumRow5 * 365 * 0.8
-  sumRow6 = sumRow6 * 365 * 1
-  sumRow7 = sumRow7 * 365 * 1
-  sumRow8 = sumRow8 * 365 * 5
-  sumRow9 = sumRow9 * 365 * 0.5
-  sumRow10 = sumRow10 * 365 * 100
+  sumRow1 = sumRow1 * 365 
+  sumRow2 = sumRow2 * 365 
+  sumRow3 = sumRow3 * 365 
+  sumRow4 = sumRow4 * 365 
+  sumRow5 = sumRow5 * 365 
+  sumRow6 = sumRow6 * 365 
+  sumRow7 = sumRow7 * 365 
+  sumRow8 = sumRow8 * 365 
+  sumRow9 = sumRow9 * 365 
+  sumRow10 = sumRow10 * 365 
 
-  sumRow11 = sumRow11 * 12
-  sumRow12 = sumRow12 * 12
-  sumRow13 = sumRow13 * 12
-  sumRow14 = sumRow14 * 12
-  sumRow15 = sumRow15 * 12
-  sumRow16 = sumRow16 * 12
-  sumRow17 = sumRow17 * 12
-  sumRow18 = sumRow18 * 12
+  sumRow11 = sumRow11 * 12 
+  sumRow12 = sumRow12 * 12 
+  sumRow13 = sumRow13 * 12 
+  sumRow14 = sumRow14 * 12 
+  sumRow15 = sumRow15 * 12 
+  sumRow16 = sumRow16 * 12 
+  sumRow17 = sumRow17 * 12 
 
 
   chartOne = chartOne * 365
@@ -632,7 +660,7 @@ function calculateSum() {
   jQuery("#sumRow2").html('' + sumRow2);
   jQuery("#sumRow3").html('' + sumRow3);
   jQuery("#sumRow4").html('' + sumRow4);
-  jQuery("#sumRow5").html('' + sumRow5);
+  jQuery("#sumRow5").html('' + sumRow5);s
   jQuery("#sumRow6").html('' + sumRow6);
   jQuery("#sumRow7").html('' + sumRow7);
   jQuery("#sumRow8").html('' + sumRow8);

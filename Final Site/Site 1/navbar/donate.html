@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		.centered {
+		  position: absolute;
+		  top: 40%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+		.ihatemyself {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;		  
+		}	
+
+		* { box-sizing: border-box; }
+		body {
+		  background: #1f1f1f;
+		  font-family: arial;
+		}
+
+		.donations {
+		  position: relative;
+		  border: 1px solid #eee;
+		  border-radius: 3px;
+		  padding: 2em;
+		  max-width: 400px;
+		  margin: 10em auto;
+		  background: white;
+		  overflow: hidden;
+		}
+
+		.donations__progress-bar {
+		  background: orange;
+		  height: 1em;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  transform: translate3D(-100%, 0, 0);
+		  width: 100%;
+		  transition: transform 500ms ease;
+		}
+
+
+		.donations__progress {
+		  text-align: center;
+		}
+
+
+		.donations__text {
+		  margin-bottom: 1em;
+		  line-height: 1.5;
+		}
+
+		.donations__donors {
+		  font-weight: bold;
+		}
+
+		.donations__form {
+		  display: flex;
+		  justify-content: space-between;
+		  flex-wrap: wrap;
+		  font-size: 1.3em;
+		}
+
+		.donations__input,
+		.donations__submit,
+		.donations__reset {
+		  font-size: inherit;
+		  border: none;
+		  padding: 0.5em 0.8em;
+		  border-radius: 5px;
+		  width: 45%;
+		  min-width: 100px;
+		  margin-bottom: 1em;
+		}
+
+		.donations__submit {
+		  background: #1cbc2c;
+		  color: white;
+		  
+		}
+
+		.donations__reset {
+		  color: white;
+		  flex-grow: 1
+		}
+
+		.donations__input {
+		  border: 1px solid #eee;
+		  padding-left: 1em;
+		}
+
+		.donations__input-icon {
+		  position: absolute;
+		  color: gray;
+		  line-height: 1.3;
+		  padding: 0.5em 0.3em;
+		  pointer-events: none;
+		}
+	</style>
+
+	<title>Donate</title>
+
+
+</head>
+<body>
+<div class = "centered">
+	<div class="donations">
+	  <div class="donations__progress-bar"></div>
+	  <h2 class="donations__progress">
+	    $<span class="donations__amount">0</span> / $75,000</h2>
+	  <div class="donations__text">
+	    Join the 
+	    <span class="donations__donors">0</span>
+	    other donors who have already supported this project.
+	  </div>
+	  <form class="donations__form">
+	    <span class="donations__input-icon">$</span>
+	    <input class="donations__input" type="number" value="50" title="$"/>
+	    <input type="submit" class="donations__submit" />
+	    <button class="donations__reset">Reset</button>
+	  </form>
+	</div>
+</div>
+<a href="javascript:history.back()" class = "ihatemyself">Go Back</a>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
