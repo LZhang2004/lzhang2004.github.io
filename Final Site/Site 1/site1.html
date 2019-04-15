@@ -16,6 +16,14 @@
     })
   </script>
 
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='animate-css'  href='https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/plugins/wp-quiz/assets/frontend/css/animate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-quiz-css'  href='https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/plugins/wp-quiz/assets/frontend/css/wp-quiz.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dlm-frontend-css'  href='https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/plugins/download-monitor/assets/css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='googleFonts-css'  href='https://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-stylesheet-css'  href='https://160g7a3snajg2i1r662yjd5r-wpengine.netdna-ssl.com/wp-content/themes/new%20edn/library/css/bootstrap.min.css' type='text/css' media='all' />
 
 
 </head>
@@ -30,18 +38,13 @@
   </div>
   <ul>
     <li><a href="#" class = "active">Home</a></li>
-    <li><a href="#">Aboout</a></li>
+    <li><a href="#">About</a></li>
     <li><a href="#">Services</a></li>
     <li><a href="#">God</a></li>
     <li><a href="#">Team</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
 </nav>
-<section class = "sec1"></section>
-<section class = "sec2"></section>
-<section class = "sec3"></section>
-<section class = "sec4"></section>
-<section class = "sec5"></section>
 
 
 
@@ -74,9 +77,185 @@
 <div id="shiva"><span class="count">87</span></div>
 <br />
 <br />
-<br />  
-<br />
   </div>
+  <div class="form-calc wrapper">
+
+    <h2 class="Intro">CALCULATE YOUR PLASTIC CONSUMPTION AND MAKE A PLAN TO REDUCE IT</h2>
+    <p>Plastic pollution is one of the most important environmental problems that we face today. It impacts the environment and our health and wellbeing. We have all contributed to this problem – mostly unknowingly – and we must work to reduce and ultimately to End Plastic Pollution.</p>
+    <p>Use this calculator to learn about how many plastic items you consume and discard every year!</p>
+    <p>The columns below mean: (please keep this in mind)</p>
+    <ul>
+      <li>D: Daily Consumption</li>
+      <li>M: Monthly Consumption</li>
+      <li>Y: Yearly Consumption</li>
+      <li>YPR: Yearly Personal Reduction **When calculating your Yearly Personal Reduction (YPR), enter in the third column the number of plastic items that you could reduce against your current yearly total (Y).</li>
+    </ul>
+
+    <!-- Chart One -->
+    <div class="chartOne">
+      <p>CHART I: ITEMS YOU CONSUME DAILY</p>
+      <p style="color: black;">Please enter the quantity for <strong>each day:</strong></p>
+      <br>
+        <label></label>
+        <p class="d">D</p>
+        <p class="y">Y</p>
+        <p class="pr">YPR</p>
+      <div>
+        <label>Plastic Bottles</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow1">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Plastic Cups</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow2">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Straws</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow3">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Cotton Swabs</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow4">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Cigarette Butts</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow5">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Plastic Resealable Bags</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow6">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Plastic Cling Wrap</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow7">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Plastic Silverware</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow8">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Plastic Stirrers</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow9">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <label>Food Containers</label>
+        <input class="daily" type="text"></input>
+        <p><span class="numbers" id="sumRow10">0</span></p>
+        <input class="reduce" type="text"></input>
+      </div>
+      <div>
+        <p>Current Yearly Consumption: <span class="numbers" id="sumChartOne">0</span></p>
+      </div>
+      <div>
+        <p>Yearly Personal Reduction: <span class="numbers" id="sumDaily">0</span></p>
+      </div>
+      <div>
+        <h4>Future Yearly Comsumption (Y - YPR): <span class="numbers" id="endChartOne"></span></h4>
+      </div>
+     </div>
+
+      <!-- Chart Two -->
+      <div class="chartTwo">
+        <div>
+          <p>CHART II: ITEMS THAT YOU CONSUME OCCASIONALLY</p>
+          <p style="color: black;">Please enter the quantity for <strong>each month:</strong></p>
+          <br>
+            <label></label>
+            <p class="m">M</p>
+            <p class="y">Y</p>
+            <p class="pr">YPR</p>
+          <div class="food-packaging">
+            <label>Food Packaging</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow11">0</span></p>
+            <input class="reduce" type="text"></input>
+          </div>
+          <div>
+            <label>Plastic Shopping / Grocery Bags</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow12">0</span></p>
+            <input class="reduce" type="text"></input>
+          </div>
+          <div>
+            <label>Cleaning Containers</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow13">0</span></p>
+            <input class="reduce" type="text"></input>
+          </div>
+          <div>
+            <label>Toothbrushes</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow14">0</span></p>
+            <input class="reduce" type="text"></input>
+          </div>
+          <div>
+            <label>Toothpaste</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow15">0</span></p>
+            <input class="reduce" type="text"></input>
+          </div>
+          <div>
+            <label>Medicine Bottles</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow16">0</span></p>
+            <input class="reduce" type="text"></input>
+
+          </div>
+          <div>
+            <label>Diapers</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow17">0</span></p>
+            <input class="reduce" type="text"></input>
+          </div>
+          <div>
+            <label>Plastic-packaged groceries(egg carton)</label>
+            <input class="monthly" type="text"></input>
+            <p><span class="numbers" id="sumRow18">0</span></p>
+            <input class="reduce" type="text"></input>
+          </div>
+          <br>
+          <br>
+        <div>
+          <p>Current Yearly Consumption: <span class="numbers" id="sumChartTwo">0</span></p>
+        </div>
+        <div>
+          <p>Yearly Personal Reduction: <span class="numbers" id="sumMonthly">0</span></p>
+        </div>
+        <div>
+          <h4>Future Yearly Consumption (Y - YPR): <span class="numbers" id="endChartTwo"></span></h4>
+        </div>
+       </div>
+    </div>
+
+    <div class="totals">
+      <!-- <h2>Yearly Total: <span class="numbers" id="sumTotal"></span></h2> -->
+      <h2>Total Yearly Personal Reduction: <span class="numbers" id="reduceTotal"></span></h2>
+      <h5>(YPR Chart I + YPR Chart II)</h5>
+    </div>
+
+
+
+
+
+
+
 </div>
 
 <div class="bgimg-3">
@@ -102,7 +281,7 @@
       <p>Question 3</p>
     </div>  
 
-    <div class = "sec4 standard divcenter">
+    <div class = "sec4 standard divcenter"> 
       <p>Question 4</p>
     </div>  
 
@@ -130,6 +309,360 @@
   });  
 </script>
 
+<script>
+// Cost Calc
+jQuery(function () {
+    // Finds All Inputs Column One
+    jQuery(".daily").each(function () {
+        jQuery(this).keyup(function () {
+            calculateSum();
+        });
+    });
+    // Finds All Inputs Column Two
+    jQuery(".monthly").each(function () {
+        jQuery(this).keyup(function () {
+            calculateSum();
+        });
+    });
+    // Finds All Inputs Column Two
+    jQuery(".reduce").each(function () {
+        jQuery(this).keyup(function () {
+            calculateSum();
+        });
+    });
+
+});
+
+function calculateSum() {
+  var sumRow1 = 0;
+  var sumRow2 = 0;
+  var sumRow3 = 0;
+  var sumRow4 = 0;
+  var sumRow5 = 0;
+  var sumRow6 = 0;
+  var sumRow7 = 0;
+  var sumRow8 = 0;
+  var sumRow9 = 0;
+  var sumRow10 = 0;
+  var sumRow11 = 0;
+  var sumRow12 = 0;
+  var sumRow13 = 0;
+  var sumRow14 = 0;
+  var sumRow15 = 0;
+  var sumRow16 = 0;
+  var sumRow17 = 0;
+  var sumRow18 = 0;
+
+  var sumRow1reduce = 0;
+  var sumRow2reduce = 0;
+  var sumRow3reduce = 0;
+  var sumRow4reduce = 0;
+  var sumRow5reduce = 0;
+  var sumRow6reduce = 0;
+  var sumRow7reduce = 0;
+  var sumRow8reduce = 0;
+  var sumRow9reduce = 0;
+  var sumRow10reduce = 0;
+  var sumRow11reduce = 0;
+  var sumRow12reduce = 0;
+  var sumRow13reduce = 0;
+  var sumRow14reduce = 0;
+  var sumRow15reduce = 0;
+  var sumRow16reduce = 0;
+  var sumRow17reduce = 0;
+  var sumRow18reduce = 0;
+
+  var Daily = 0;
+  var Monthly = 0;
+  var chartOne = 0; // Total Chart One
+  var endchartOne = 0;
+  var endchartTwo = 0;
+  var chartTwo = 0; // Total Chart Two
+  var sum = 0; // Total
+  var reduceTotal = 0;
+
+  // Total Quantity - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          chartOne += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne .reduce").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          Daily += parseFloat(this.value);
+      }
+  });
+
+    // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          chartTwo += parseFloat(this.value);
+      }
+  });
+
+  jQuery(".chartOne .endchartOne").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          endchartOne += parseFloat(this.value);
+      }
+  });
+
+  jQuery(".chartTwo .endchartTwo").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          endchartTwo += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo .reduce").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          Monthly += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(1) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow1 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(1) .reduce").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow1reduce += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(2) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow2 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(2) .reduce").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow2reduce += parseFloat(this.value);
+      }
+  });
+
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(3) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow3 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(3) .reduce").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow3reduce += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(4) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow4 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(4) .reduce").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow4reduce += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(5) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow5 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(6) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow6 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(7) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow7 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(8) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow8 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(9) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow9 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartOne div:nth-of-type(10) .daily").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow10 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo .food-packaging .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow11 += parseFloat(this.value);
+      }
+  });
+
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo div:nth-of-type(2) .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow12 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo div:nth-of-type(3) .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow13 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo div:nth-of-type(4) .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow14 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo div:nth-of-type(5) .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow15 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo div:nth-of-type(6) .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow16 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo div:nth-of-type(7) .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow17 += parseFloat(this.value);
+      }
+  });
+
+  // Total Quantity chart Two - Finds which inputs to capture & assigns values to variable
+  jQuery(".chartTwo div:nth-of-type(8) .monthly").each(function () {
+      if (!isNaN(this.value) && this.value.length != 0) {
+          sumRow18 += parseFloat(this.value);
+      }
+  });
+
+
+
+  sumRow1 = sumRow1 * 365 * 18
+  sumRow2 = sumRow2 * 365 * 40
+  sumRow3 = sumRow3 * 365 * 0.4
+  sumRow4 = sumRow4 * 365 * 0.5
+  sumRow5 = sumRow5 * 365 * 0.8
+  sumRow6 = sumRow6 * 365 * 1
+  sumRow7 = sumRow7 * 365 * 1
+  sumRow8 = sumRow8 * 365 * 5
+  sumRow9 = sumRow9 * 365 * 0.5
+  sumRow10 = sumRow10 * 365 * 100
+
+  sumRow11 = sumRow11 * 12
+  sumRow12 = sumRow12 * 12
+  sumRow13 = sumRow13 * 12
+  sumRow14 = sumRow14 * 12
+  sumRow15 = sumRow15 * 12
+  sumRow16 = sumRow16 * 12
+  sumRow17 = sumRow17 * 12
+  sumRow18 = sumRow18 * 12
+
+
+  chartOne = chartOne * 365
+  chartTwo = chartTwo * 12
+  // Daily = Daily * 365
+  // Monthly = Monthly * 12
+  // sum = chartOne + ChartTwo
+  endchartOne = chartOne - Daily
+  endchartTwo = chartTwo - Monthly
+
+
+
+  // Perform Calculations
+   var sum = chartOne + chartTwo;
+   var reduceTotal = Daily + Monthly;
+
+
+  // Print each variable to span with respective id
+  // jQuery("#sumChartOne").html(chartOne);
+
+  // Print results of calculations to span with respective id
+  jQuery("#sumChartOne").html('' + chartOne);
+  jQuery("#endChartOne").html('' + endchartOne);
+  jQuery("#endChartTwo").html('' + endchartTwo);
+  jQuery("#sumDaily").html('' + Daily);
+  jQuery("#sumMonthly").html('' + Monthly);
+    jQuery("#sumChartTwo").html('' + chartTwo);
+  jQuery("#sumTotal").html('' + sum);
+  jQuery("#reduceTotal").html('' + reduceTotal);
+
+  jQuery("#sumRow1").html('' + sumRow1);
+  jQuery("#sumRow2").html('' + sumRow2);
+  jQuery("#sumRow3").html('' + sumRow3);
+  jQuery("#sumRow4").html('' + sumRow4);
+  jQuery("#sumRow5").html('' + sumRow5);
+  jQuery("#sumRow6").html('' + sumRow6);
+  jQuery("#sumRow7").html('' + sumRow7);
+  jQuery("#sumRow8").html('' + sumRow8);
+  jQuery("#sumRow9").html('' + sumRow9);
+  jQuery("#sumRow10").html('' + sumRow10);
+  jQuery("#sumRow11").html('' + sumRow11);
+  jQuery("#sumRow12").html('' + sumRow12);
+  jQuery("#sumRow13").html('' + sumRow13);
+  jQuery("#sumRow14").html('' + sumRow14);
+  jQuery("#sumRow15").html('' + sumRow15);
+  jQuery("#sumRow16").html('' + sumRow16);
+  jQuery("#sumRow17").html('' + sumRow17);
+  jQuery("#sumRow18").html('' + sumRow18);
+
+  //  Custom Work for SalsaLabs
+  console.log(reduceTotal);
+  jQuery('input[name=field-d8f519e6-32d4-4a7e-9e59-3e49904e5f5a]').val(reduceTotal);
+
+
+
+  jQuery.fn.digits = function(){
+      return this.each(function(){
+          jQuery(this).text( jQuery(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") );
+      })
+  }
+  jQuery("span.numbers").digits();
+
+}
+
+</script>
 
 </body>
 </html>
