@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" type = "text/css" href= "style.css">
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	<script src = "https://code.jquery.com/jquery-3.2.1.js"></script>
+<style type="text/css">
+	/* Split the screen in half */
+	.split {
+	  height: 100%;
+	  width: 50%;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  overflow-x: hidden;
+	  padding-top: 20px;
+	}
+
+	/* Control the left side */
+	.left {
+	  left: 0;
+	  background-image: url("ocean.jpg");
+	  background-size: 190%;
+
+	}
+
+	/* Control the right side */
+	.right {
+	  right: 0;
+	  background-image: url("land.jpg");
+	  background-size: 210%;
+	}
+
+	/* If you want the content centered horizontally and vertically */
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+
+	/* Style the image inside the centered container, if needed */
+	.centered img {
+	  width: 150px;
+	  border-radius: 50%;
+	}	
+
+	.white {
+		color: #FFFFFF;
+	}
+
+
+
+	nav section a
+	{
+	  color: #fff;
+	  font-size: 25px;
+	  padding: 5px 20px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  transition: .5s;
+	}
+
+	nav h2 
+	{
+		font-size: 40px;
+		color: #fff;
+	}
+
+	nav section a.active, 
+	nav section a:hover 
+	{
+		color: #FF0000;
+		background: #FFFFFF;
+	}
+
+	q section a 
+	{
+	  color: #fff;
+	  font-size: 25px;
+	  padding: 5px 20px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  transition: .5s;
+	}
+
+	q section a.active, 
+	q section a:hover 
+	{
+		color: #FF0000;
+		background: #FFFFFF;
+	}
+
+
+</style>
+
+
+
+</head>
+
+
+<body background="underwater.jpg">
+
+<nav class>
+	<div class="split left">
+	  <div class="centered">
+	    <h2>I Use Plastic Utensils Often</h2>
+	    <section><a href="b1/a1/a1a.html">CHOOSE</a></section>
+	  </div>
+	</div>
+</nav>
+
+<q class>
+	<div class="split right">
+	  <div class="centered">
+	    <h2 class = "white" style="font-size: 40px">I Do Not Use Plastic Utensils Often</h2>
+	    <section><a href="b1/a1/a1b.html" style="text-align: center;">choose</a></section>
+	  </div>
+	</div>
+</nav>
+
+
+
+
+</body>
+</html>
